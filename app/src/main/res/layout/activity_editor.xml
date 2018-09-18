@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for the editor -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".EditorActivity">
+
+    <!-- Name category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Name Label -->
+        <TextView
+            android:text="@string/category_name"
+            style="@style/CategoryStyle" />
+
+        <!-- Name field -->
+        <EditText
+            android:id="@+id/edit_book_name"
+            android:layout_marginLeft="12dp"
+            android:hint="@string/hint_book_name"
+            android:inputType="textCapWords"
+            style="@style/EditorFieldStyle" />
+
+    </LinearLayout>
+
+    <!-- Price category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="132dp"
+        android:orientation="horizontal">
+
+        <!-- Price Label -->
+        <TextView
+            android:text="@string/category_price"
+            style="@style/CategoryStyle" />
+
+        <!-- Price field -->
+        <EditText
+            android:id="@+id/edit_book_price"
+            android:hint="@string/hint_book_price"
+            android:inputType="number"
+            android:drawableRight="@drawable/money_black_24dp"
+            style="@style/EditorFieldStyle" />
+
+        <!-- Units for price ($) -->
+        <ImageView
+            android:id="@+id/label_price_units"
+            android:src="@drawable/money_black_24dp"
+            style="@style/EditorUnitsStyle"/>
+    </LinearLayout>
+
+    <!-- Quantity category -->
+    <LinearLayout
+        android:id="@+id/container_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Quantity Label -->
+        <TextView
+            android:text="@string/category_quantity"
+            android:layout_weight="1"
+            style="@style/CategoryStyle" />
+
+        <!-- Quantity field -->
+        <EditText
+            android:id="@+id/edit_book_quantity"
+            android:hint="@string/hint_book_quantity"
+            android:layout_weight="1"
+            android:inputType="number"
+            style="@style/EditorFieldStyle" />
+
+
+    </LinearLayout>
+
+    <!-- Supplier category -->
+    <LinearLayout
+        android:id="@+id/container_supplier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/category_supplier"
+            style="@style/CategoryStyle" />
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="vertical">
+
+            <!-- Name field -->
+            <EditText
+                android:id="@+id/edit_supplier_name"
+                android:hint="@string/hint_supplier_name"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+
+            <!-- Phone field -->
+            <EditText
+                android:id="@+id/edit_supplier_phone"
+                android:hint="@string/hint_supplier_phone"
+                android:inputType="number"
+                android:drawableRight="@drawable/phone_black_24dp"
+                style="@style/EditorFieldStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

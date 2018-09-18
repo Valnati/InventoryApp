@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">Inventory App</string>
+
+    <!-- Label for overflow menu option that inserts fake book data into the app [CHAR LIMIT=20] -->
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+
+    <!-- Label for overflow menu option that deletes all book data in the app [CHAR LIMIT=20] -->
+    <string name="action_delete_all_entries">Delete All Books</string>
+
+    <!-- Title text for the empty view, when no items are inserted [CHAR LIMIT=50] -->
+    <string name="empty_view_title_text">Your stories need space to breathe!</string>
+
+    <!-- Subtitle text for the empty view that prompts the user to add a book [CHAR LIMIT=50] -->
+    <string name="empty_view_subtitle_text">Get started by adding a book</string>
+
+    <!-- Title for the activity to add a new book [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_new_pet">Add a Book</string>
+
+    <!-- Title for the activity to edit an existing pet [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_edit_pet">Edit Book</string>
+
+    <!-- Label for editor menu option to save book and leave editor [CHAR LIMIT=20] -->
+    <string name="action_save">Save</string>
+
+    <!-- Label for editor overflow menu option that deletes the current book [CHAR LIMIT=20] -->
+    <string name="action_delete">Delete</string>
+
+    <!-- Label for editor overflow menu option that calls the relevant supplier [CHAR LIMIT=20] -->
+    <string name="action_call">Call Supplier</string>
+
+    <!-- Toast message in editor when new book has been successfully inserted [CHAR LIMIT=NONE] -->
+    <string name="editor_insert_book_successful">Book saved</string>
+
+    <!-- Toast message in editor when new book has failed to be inserted [CHAR LIMIT=NONE] -->
+    <string name="editor_insert_book_failed">Error with saving book</string>
+
+    <!-- Toast message in editor when current book was successfully updated [CHAR LIMIT=NONE] -->
+    <string name="editor_update_book_successful">Book updated</string>
+
+    <!-- Toast message in editor when current book has failed to be updated [CHAR LIMIT=NONE] -->
+    <string name="editor_update_book_failed">Error with updating book</string>
+
+    <!-- Dialog message when user is leaving editor but hasn't saved changes [CHAR LIMIT=NONE] -->
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+
+    <!-- Dialog button text for the option to discard a user's changes [CHAR LIMIT=20] -->
+    <string name="discard">Discard</string>
+
+    <!-- Dialog button text for the option to keep editing the current book [CHAR LIMIT=20] -->
+    <string name="keep_editing">Keep Editing</string>
+
+    <!-- Toast message in editor when current book was successfully deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_book_successful">Book deleted</string>
+
+    <!-- Toast message in editor when current book has failed to be deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_book_failed">Error with deleting book</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current book [CHAR LIMIT=NONE] -->
+    <string name="delete_dialog_msg">Delete this book?</string>
+
+    <!-- Dialog button text for the option to confirm deleting the current book [CHAR LIMIT=20] -->
+    <string name="delete">Delete</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current book [CHAR LIMIT=20] -->
+    <string name="cancel">Cancel</string>
+
+    <!-- Label for name category of Edit Book activity [CHAR LIMIT=10] -->
+    <string name="category_name">Name</string>
+
+    <!-- Hint for name category of Edit Book field [CHAR LIMIT=10] -->
+    <string name="hint_book_name">How to Raise Chinchillas</string>
+
+    <!-- Label for price category of Edit Book activity [CHAR LIMIT=10] -->
+    <string name="category_price">Price</string>
+
+    <!-- Hint for price category of Edit Book field [CHAR LIMIT=10] -->
+    <string name="hint_book_price">12</string>
+
+    <!-- Label for quantity category of Edit Book activity [CHAR LIMIT=10] -->
+    <string name="category_quantity">Copies</string>
+
+    <!-- Hint for name category of Edit quantity field [CHAR LIMIT=10] -->
+    <string name="hint_book_quantity">4</string>
+
+    <!-- Label for supplier category of Edit Book activity [CHAR LIMIT=10] -->
+    <string name="category_supplier">Supplier</string>
+
+    <!-- Hint for name category of Edit supplier field [CHAR LIMIT=10] -->
+    <string name="hint_supplier_name">Paper Drapery</string>
+
+    <!-- Hint for name category of Edit phone field [CHAR LIMIT=12] -->
+    <string name="hint_supplier_phone">555-123-3456</string>
+
+    <!-- Text to go in the sold button on the catalogActivity page [CHAR LIMIT=10] -->
+    <string name="button_text">Sold one!</string>
+
+    <!-- Title text for editor Activity when adding a new book [CHAR LIMIT=10] -->
+    <string name="editor_activity_title_new_book">Add a book</string>
+
+    <!-- Title text for editor Activity when adding a new book [CHAR LIMIT=10] -->
+    <string name="editor_activity_title_edit_book">Edit book</string>
+
+    <string name="copies_left"> left</string>
+
+    <string name="quantity_limit"> You\'ve sold them all!</string>
+
+    <string name="detail_activity_button_decrease">less</string>
+
+    <string name ="detail_activity_button_increase">more</string>
+
+    <string name="sold_all">This book is sold out!</string>
+
+    <string name="button_decrease_limit"> You can\'t have negative books, friend.</string>
+
+    <string name="action_edit">Edit book</string>
+</resources>

@@ -1,0 +1,132 @@
+<!-- Layout for the editor -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".EditorActivity">
+
+    <!-- Name category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Name Label -->
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_name" />
+
+        <!-- Name field -->
+        <TextView
+            android:id="@+id/details_book_name"
+            style="@style/EditorFieldStyle"
+            android:layout_marginLeft="12dp"
+            android:hint="@string/hint_book_name"
+            android:inputType="textCapWords" />
+
+    </LinearLayout>
+
+    <!-- Price category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="132dp">
+
+        <!-- Price Label -->
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_price" />
+
+        <!-- Price field -->
+        <TextView
+            android:id="@+id/details_book_price"
+            style="@style/EditorFieldStyle"
+            android:drawableRight="@drawable/money_black_24dp"
+            android:hint="@string/hint_book_price"
+            android:inputType="number" />
+
+        <!-- Units for price ($) -->
+        <ImageView
+            android:id="@+id/label_price_units"
+            style="@style/EditorUnitsStyle"
+            android:src="@drawable/money_black_24dp"/>
+    </LinearLayout>
+
+    <!-- Quantity category -->
+    <LinearLayout
+        android:id="@+id/container_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Quantity Label -->
+        <TextView
+            style="@style/CategoryStyle"
+            android:layout_weight="1"
+            android:text="@string/category_quantity" />
+
+        <Button
+            android:id="@+id/details_activity_button_decrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_activity_button_decrease"/>
+
+        <Button
+            android:id="@+id/details_activity_button_increase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_activity_button_increase"/>
+
+        <!-- Quantity field -->
+        <TextView
+            android:id="@+id/details_book_quantity"
+            style="@style/EditorFieldStyle"
+            android:layout_weight="1"
+            android:hint="@string/hint_book_quantity"
+            android:inputType="number"
+            android:paddingLeft="24dp" />
+
+
+    </LinearLayout>
+
+    <!-- Supplier category -->
+    <LinearLayout
+        android:id="@+id/container_supplier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_supplier" />
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingLeft="4dp">
+
+            <!-- Name field -->
+            <TextView
+                android:id="@+id/details_supplier_name"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_supplier_name"
+                android:inputType="textCapWords" />
+
+            <!-- Phone field -->
+            <TextView
+                android:id="@+id/details_supplier_phone"
+                style="@style/EditorFieldStyle"
+                android:drawableRight="@drawable/phone_black_24dp"
+                android:hint="@string/hint_supplier_phone"
+                android:inputType="number" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
